@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Red or Blue</title>
+</head>
+<body>
+  <!-- <div id="body-color"
+    style="
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    "></div> -->
+
+  <script>
+    var random = Math.ceil(Math.random() * 100);
+
+    var name = prompt("Hey there color master, \nWhat should I call you?");
+      alert("Okay " + name + "\nCool name, huh");
+    
+    var play = confirm("Can you guess if I'm thinking Red or Blue?");
+    if (play) {
+      var guess = confirm("Okay, count 1 to 3 and guess \nThen click okay if you're ready to read my mind \n1, 2, 3 guess!");
+      if (guess) {
+        // guessing
+        var result = random > 50 ? "I'm thinking Red" : "I'm thinking Blue";
+        alert(result);
+    } else {
+      // not guessing
+      alert("Wait what?!! \nUgh you're such a loser " + name + "\nReload again if you got the balls");
+    }
+    } else {
+      alert("Wait what?!! \nUgh you're such a loser " + name + "\nReload again if you got the balls");
+    }
+
+
+    alert("Uhmm, since I can't actually read minds \nand my programmer is such a noob... that's all fow now");
+    alert("Thanks anyway!")
+
+  </script>
+  
+</body>
+</html>
